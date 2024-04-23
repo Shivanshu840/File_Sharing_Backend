@@ -13,7 +13,7 @@ const downloadroute = require('./routes/download')
  const authroute = require('./routes/authentication')
  app.use(express.json());
  app.use(cors());
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT 
 app.use('/Home', authroute);
 app.use('/api', multerroute);
 app.use('/files', showroute);
