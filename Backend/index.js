@@ -18,7 +18,6 @@ app.use('/Home', authroute);
 app.use('/api', multerroute);
 app.use('/files', showroute);
 app.use('/files/download',downloadroute);
-
 app.listen(PORT,()=>{
     console.log(`server is running on this ${PORT}`)
 })
